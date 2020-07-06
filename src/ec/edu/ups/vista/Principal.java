@@ -101,7 +101,7 @@ public class Principal extends javax.swing.JFrame {
         jScrollPane2.setViewportView(txtArea);
 
         desktopPane.add(jScrollPane2);
-        jScrollPane2.setBounds(320, 170, 230, 150);
+        jScrollPane2.setBounds(330, 170, 220, 160);
 
         btnInfo.setBackground(new java.awt.Color(204, 204, 204));
         btnInfo.setFont(new java.awt.Font("Arial", 1, 10)); // NOI18N
@@ -390,10 +390,8 @@ public class Principal extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Principal().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new Principal().setVisible(true);
         });
     }
 

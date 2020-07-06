@@ -16,11 +16,13 @@ import java.util.List;
  * @author Juanc
  */
 public class ControladorDirectorio {
+
     private File archivo;
     private File[] archivos;
 
     public ControladorDirectorio() {
     }
+
     public void crear(String ruta, String nombre) {
         archivo = new File(ruta + File.separator + nombre);
         archivo.mkdir();
@@ -65,6 +67,7 @@ public class ControladorDirectorio {
         }
         ruta.delete();
     }
+
     public boolean validaRuta(String ruta) {
         archivo = new File(ruta);
         return archivo.exists();
@@ -98,7 +101,7 @@ public class ControladorDirectorio {
         archivos = archivo.listFiles();
 
         for (File elemento : archivos) {
-            if (elemento.isFile()&& elemento.isHidden()) {
+            if (elemento.isFile() && elemento.isHidden()) {
                 lista.add(elemento.getName());
             }
 
@@ -107,7 +110,7 @@ public class ControladorDirectorio {
             if (elemento.isDirectory()) {
                 File[] dOcultos = elemento.listFiles();
                 for (File subElemento : dOcultos) {
-                    if (subElemento.isFile() && subElemento.isHidden()  ) {
+                    if (subElemento.isFile() && subElemento.isHidden()) {
                         lista.add(subElemento.getName());
 
                     }
@@ -117,7 +120,8 @@ public class ControladorDirectorio {
         }
         return lista;
     }
-   public List<String> Listar(String ruta, String nombre) {
+
+    public List<String> Listar(String ruta, String nombre) {
         archivo = new File(ruta + File.separator + nombre);
         archivos = archivo.listFiles();
         List<String> lista = new ArrayList<>();
@@ -132,6 +136,7 @@ public class ControladorDirectorio {
         archivo = new File(ruta + File.separator + nombre);
         return archivo.getAbsolutePath();
     }
+
     public List<String> listarDirectoriosOcultos(String ruta) {
         List<String> lista = new ArrayList<>();
         lista.clear();
@@ -150,47 +155,46 @@ public class ControladorDirectorio {
     public String mostrarInformacion(String nombre, String ruta) {
         archivo = new File(ruta);
         archivos = archivo.listFiles();
-        String informacion = "Informacion "+"\n";
+        String informacion = "Informacion " + "\n";
 
         for (File elemento : archivos) {
             if (elemento.getName().equals(nombre)) {
                 String path = "Path: ";
-                path = path + " "+elemento.getAbsolutePath();
-                informacion = informacion+("\n");
-                informacion = informacion+" "+ ruta+"\n";
-                informacion = informacion+" "+path;
+                path = path + " " + elemento.getAbsolutePath();
+                informacion = informacion + ("\n");
+                informacion = informacion + " " + ruta + "\n";
+                informacion = informacion + " " + path;
 
                 String tamaño = "Tamaño";
                 long bytes = elemento.length();
                 bytes = (bytes) / (1024);
                 String cad = String.valueOf(bytes);
-                cad = cad+""+("Kb");
-                tamaño = tamaño+""+cad;
-                informacion = informacion+"\n";
-                informacion = informacion+tamaño;
+                cad = cad + "" + ("Kb");
+                tamaño = tamaño + "" + cad;
+                informacion = informacion + "\n";
+                informacion = informacion + tamaño;
 
-               
                 String lectura = "Permisos de lectura: ";
                 if (elemento.canRead()) {
-                    lectura = lectura+" "+"Abierto";
+                    lectura = lectura + " " + "Abierto";
 
                 } else {
-                    lectura = lectura+" "+("Cerrado");
+                    lectura = lectura + " " + ("Cerrado");
 
                 }
-                informacion = informacion+""+("\n");
-                informacion = informacion+""+lectura;
+                informacion = informacion + "" + ("\n");
+                informacion = informacion + "" + lectura;
 
                 String escritura = "Permisos de escritura";
                 if (elemento.canWrite()) {
-                    escritura = escritura+""+"Abierto";
+                    escritura = escritura + "" + "Abierto";
 
                 } else {
-                    escritura = escritura+""+"Cerrado";
+                    escritura = escritura + "" + "Cerrado";
 
                 }
-                informacion = informacion+""+"\n";
-                informacion = informacion+""+escritura;
+                informacion = informacion + "" + "\n";
+                informacion = informacion + "" + escritura;
 
                 long lastModified = elemento.lastModified();
 
@@ -198,20 +202,16 @@ public class ControladorDirectorio {
                 SimpleDateFormat formato = new SimpleDateFormat(patter);
 
                 String lastModifiedDate = formato.format(lastModified);
-                 
+
                 String fecha = "Ultima modificacion: ";
-                fecha = fecha+" "+lastModifiedDate;
-                informacion = informacion+""+"\n";
-                informacion = informacion+""+fecha;
+                fecha = fecha + " " + lastModifiedDate;
+                informacion = informacion + "" + "\n";
+                informacion = informacion + "" + fecha;
 
             }
 
         }
         return informacion;
     }
-
-    
-
-    
 
 }

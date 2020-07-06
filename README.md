@@ -13,9 +13,11 @@ de la arquitectura MVC y los conceptos previos sobre la implementación*
 **2. Desarrollar una aplicación que permita la gestión de directorios en Java utilizando manejo de excepciones**
 
 *Paquete controlador*
+
 *Clase controladorDirectorio*
 
 *Paquete Vista*
+
 *Clase Principal*
 
 *Diseño de ventana JFrame*
@@ -38,3 +40,8 @@ de la arquitectura MVC y los conceptos previos sobre la implementación*
 **RECOMENDACIONES:**
 
 *La clase File representa un fichero o directorio de nuestro sistema de archivos, lo cual nos es útil ya que puede pasarse como parámetro para las principales clases que manejan ficheros. Además, dentro de la clase File tenemos un par de métodos muy útiles, que son pathSeparator y separator. que nos servirán si usamos nuestra aplicación en varios sistemas operativos. Nos permitirá mostrar el separador entre ficheros entre rutas de cada sistema operativo*
+
+
+**Nombre de estudiante: JUAN JOSE CORDOVA CALLE**
+
+**Firma:**

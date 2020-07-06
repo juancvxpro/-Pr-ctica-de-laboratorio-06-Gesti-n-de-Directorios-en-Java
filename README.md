@@ -9,6 +9,7 @@ de la arquitectura MVC y los conceptos previos sobre la implementación*
 
 **1.Crear un repositorio en GitHub con el nombre “Práctica de laboratorio 06: Gestión de Directorios en Java** 
 
+![Repositorio](https://github.com/juancvxpro/-Pr-ctica-de-laboratorio-06-Gesti-n-de-Directorios-en-Java/blob/master/repositorio.jpg)
 
 **2. Desarrollar una aplicación que permita la gestión de directorios en Java utilizando manejo de excepciones**
 
@@ -30,8 +31,13 @@ de la arquitectura MVC y los conceptos previos sobre la implementación*
 
 
 
+![Ventana](https://github.com/juancvxpro/-Pr-ctica-de-laboratorio-06-Gesti-n-de-Directorios-en-Java/blob/master/ventana.jpg)
+
+
 **3. Realizar varios commit en la herramienta GitHub que demuestren el desarrollo de la aplicación desde**
 **principio a fin.**
+
+![Commits](https://github.com/juancvxpro/-Pr-ctica-de-laboratorio-06-Gesti-n-de-Directorios-en-Java/blob/master/commits.jpg)
 
 **4. Implementar el README del repositorio del proyecto con la misma información del informe de la práctica (incluidas las imágenes y versiones de las herramientas)**
 

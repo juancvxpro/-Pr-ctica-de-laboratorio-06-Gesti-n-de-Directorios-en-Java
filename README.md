@@ -41,6 +41,8 @@ de la arquitectura MVC y los conceptos previos sobre la implementación*
 
 **4. Implementar el README del repositorio del proyecto con la misma información del informe de la práctica (incluidas las imágenes y versiones de las herramientas)**
 
+![README](https://github.com/juancvxpro/-Pr-ctica-de-laboratorio-06-Gesti-n-de-Directorios-en-Java/blob/master/README.md)
+
 **RESULTADO(S) OBTENIDO(S):**
 
 *Se creo una aplicación informática el cual nos ayuda a manipular el manejo de directorios utilizando la arquitectura MVC con la ayuda de una ventana JFrame la cual recibe como parámetro la ruta del directorio a manipular y muestra por un textArea y un jList la información, y obviamente se manipularon los datos desde un controlador donde se hacia un llamado a la clase File para la ejecución de los métodos propuestos.*

@@ -16,11 +16,17 @@ de la arquitectura MVC y los conceptos previos sobre la implementación*
 
 *Clase controladorDirectorio*
 
+![controladorDirectorio](https://github.com/juancvxpro/-Pr-ctica-de-laboratorio-06-Gesti-n-de-Directorios-en-Java/blob/master/src/ec/edu/ups/controlador/ControladorDirectorio.java)
+
 *Paquete Vista*
 
 *Clase Principal*
 
+![Principal](https://github.com/juancvxpro/-Pr-ctica-de-laboratorio-06-Gesti-n-de-Directorios-en-Java/blob/master/src/ec/edu/ups/vista/Principal.java)
+
 *Diseño de ventana JFrame*
+
+![Codigo Frame](https://github.com/juancvxpro/-Pr-ctica-de-laboratorio-06-Gesti-n-de-Directorios-en-Java/blob/master/src/ec/edu/ups/vista/Principal.form)
 
 
 
